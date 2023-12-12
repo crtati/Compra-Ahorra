@@ -1,0 +1,55 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{%  endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-dark" >
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="#"><i class="bi bi-tree-fill"></i> Compra&Ahorra </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="nav justify-content-between">
+                <li class="nav-item">
+                    <a class="nav-link" href="#tienda" style="color: #130f40;"><span class="fs-4">tienda</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto" style="color: #130f40;">
+                        <span class="fs-4">contacto
+                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}" style="color: #130f40;">
+                        <span class="fs-4">Login
+                        </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal3" style="color: #130f40;">
+                        <span class="fs-4">Carrito</span>
+                    </a>
+                </li>
+
+            </ul>
+            </div>
+        </div>
+</nav>
+
+    {% block content %}{%  endblock %}
+    
+
+    <script src="{% static 'js/jquery/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/popper/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

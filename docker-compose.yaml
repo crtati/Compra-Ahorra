@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  compra-ahorra-networks:
+
+services:
+  compra-ahorra-container:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - 9000:9000
+    networks:
+      - compra-ahorra-networks
+    volumes:
+      - ./compra_ahorra:/opt/app/compra_ahorra

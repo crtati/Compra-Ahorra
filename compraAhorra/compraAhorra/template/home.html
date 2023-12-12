@@ -1,0 +1,73 @@
+
+{% extends "principal.html" %} {% block title %}COMPRA&AHORRA{% endblock %}{% block content %}{% load static %}
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+<script src="{% static 'js/funcionesCarrito.js'%}"></script>
+<table id="tbl-products" class="table mt-5" style="max-width:1020px;margin: auto;">
+    <thead>
+      <tr>
+        <th scope="col">PRODUCTO</th>
+        <th scope="col">CANTIDAD</th>
+        <th scope="col">PRECIO</th>
+      </tr>
+    </thead>
+    <tbody class>
+        {% for product in products %}
+      <tr>
+        <td>
+            <figure class="figure">
+                <img src="{% static product.image %}" 
+                style="max-width: 150px; max-height: 150px;" class="img-thumbnail" alt="xbox gamepad">
+                    <figcaption class="figure-caption text-center">{{product.product}}</figcaption>
+                    <figcaption class="figure-caption text-center">{{product.description}}</figcaption>            
+            </figure>                      
+        </td>
+        <td>{{product.quantity}}</td>
+        <td>{{product.price}}</td>
+        {% endfor %}        
+      </tr>
+      <form id='frm-pay' name="pay" action="/webpay-plus-create" method="POST">{% csrf_token %}
+      <tr>
+        <td></td>
+        <td><strong>Total</strong></td>
+        <td><strong>{{total}}</strong><input id='txt-total' name="total" hidden value="{{total}}" /></td>
+        <td><button class="alert alert-primary">PAGAR</button></td>       
+      </tr>
+    </form>            
+    </tbody>
+  </table>
+  <div class="px-5">
+    <div class="px-5">
+        <p>
+            <section>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                        
+                    </tbody>
+                </table>
+                <div class="row mx-4">
+                    <div>
+                        <h3 class="item-car-total">Total: 0</h3>
+                    </div>
+                </div>
+            </section>
+        </p>
+    </div>
+    <div class="modal-footer px-5">
+        <div>
+            <button type="button" class="btn btn-outline-secondary" href="{% url 'index' %}">Cancelar</button>
+        </div>
+        <div class="px-4">
+            <button id="botonComprar" type="button" class="btn btn-outline-success">Comprar</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

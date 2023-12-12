@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+}
+.navbar{
+background-color: #26d6726b;
+box-shadow: var(--box-shadow);
+}
+
+.nav{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+.btn:hover{
+    background: #019b41;
+    color: #ffffff;
+}
+
+nav li a{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: var(--black);
+    
+}
+
+nav ul li a span:hover{
+    color: var(--green);
+}
+
+
+/* main */
+.display-6{
+    background: var(--green);
+    color: white;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0,93% 50%,100% 99%, 0% 100%, 7% 50%, 0% 0%);
+
+}
+
+
+form .links{
+display: flex;
+justify-content: space-between;
+
+}
+.modal-header .modal-title{
+    color: var(--black);
+}
+
+div label{
+    color: var(--black);
+}
+form  div p a{
+    text-decoration: none;
+    color: var(--green);
+}
+form  div p a:hover{
+    color: blue;
+}
+
+
+
+
+/* footer*/
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.footer{
+    background-color: #a0cfb46b;
+    padding: 70px 0;
+    box-shadow: var(--box-shadow);
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: var(--green);
+    height: 2px;
+    box-sizing: border-box ;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;   
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300;
+    color: var(--light-color);
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: var(--green);
+    padding: 8pX;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: var(--black);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: white;
+    background-color: var(--green);
+}
+
+
+#footer-email{
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding-left: 8px;
+    font-size: 16px;
+margin-bottom: 16px;
+}
+
+#footer-email-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color:var(--black);
+    outline: none;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#footer-email-btn:hover{
+        color: white;
+        background-color: var(--green);
+
+}
+
+@media(max-width: 767px){
+.footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+}
+
+/*REGISTRO*/
+
+.form-registro{
+    width: 400px;
+    background-color:#a0cfb46b;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    color:var(--black) ;
+    box-shadow:  3px 13px 37px #000 ;
+}
+
+.form-registro h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls{
+    width: 100%;
+    background: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #130f40;
+    font-size: 18px;
+}
+.form-registro p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    
+    
+}
+.form-registro a{
+    color: #019b41;
+    text-decoration: none;
+}
+.form-registro a:hover{
+    color: #019b41;
+    text-decoration: underline;
+}
+div .check{
+    margin-top: 8px;
+    width: 15px;
+    height: 15px;
+}
+
+.carrito{
+    min-height: 70vh;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carrito{
+    min-height: 70vh;
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+}
+.table-producto{
+    display: flex;
+}
+.table-producto img{
+    width: 5rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.table-cantidad input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    text-align: center;
+}

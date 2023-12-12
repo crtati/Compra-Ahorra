@@ -1,0 +1,350 @@
+{% extends "principal.html" %} {% block title %}COMPRA&AHORRA{% endblock %}{% block content %}{% load static %}
+<link href="{% static 'css/estilos.css' %}" rel="stylesheet">
+<script src="{% static 'js/funcionesCarrito.js'%}"></script>
+<body>
+<section >   
+
+    <div class="text-center p-4" style="background-color: #eee">
+        <h1 class="display-6">Televisiones</h1>
+        <a class="text-reset fw-bold" href=""></a>
+    </div>
+    <!--TIENDA 1-->
+    <div class="row" id="tienda">
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ001</h5>
+                <img class="img img-fluid card-img-top" src="{% static 'img/product/television1.jpg' %}" style="height: 20rem;"   alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Television 1</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Contenido 50 litros</li>
+                            <li style="text-align: left;">Peso 25kg</li>
+                            <li style="text-align: left;">Tipo de producto: Tierra y sustratos</li>
+                        </ul>
+                    </p>
+                    <h5 >Precio: <span class="precio">$3200</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button  class="btn btn-car btn-outline-secondary button" >Añadir al carro</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ002</h5>
+                <img class="img img-fluid card-img-top" src="{% static 'img/product/television2.jpg'%}" style="height: 20rem;"  alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Television 2</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Contenido: 50 litros</li>
+                            <li style="text-align: left;">Peso 25kg</li>
+                            <li style="text-align: left;">Tipo de producto: Tierra y sustratos</li>
+                        </ul>
+                    </p>
+                    <h5 >Precio: <span class="precio">$5200</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-car btn-outline-secondary button">Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">Television 3</h5>
+                <img class="img img-fluid card-img-top" src="{% static 'img/product/television3.jpg'%}" style="height: 20rem;"  alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Tierra hoja reforzada 25 litros Roots</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Contenido: 25 litros</li>
+                            <li style="text-align: left;">Peso: 8.590kg</li>
+                            <li style="text-align: left;">Tipo de producto: Tierra y sustratos</li>
+                        </ul>
+                    </p>
+                    <h5>Precio: <span class="precio">$4490</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                            <button class="btn btn-car btn-outline-secondary button" >Añadir al carro</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-4" style="background-color: #eee">
+        <h1 class="display-6">Laptops</h1>
+        <a class="text-reset fw-bold" href=""></a>
+    </div>
+
+    <!--TIENDA 2-->
+    <div class="row">
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ004</h5>
+                <img src="{% static 'img/product/laptop1.jpg'%}" style="height: 20rem;" class="img img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LAPTOP 1</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Alto: 12 cm</li>
+                            <li style="text-align: left;">Diámetro exterior: 11 cm</li>
+                            <li style="text-align: left;">Diámetro máximo macetero: 9 cm</li>
+                            <li style="text-align: left;">Diámetro interior: 10 cm</li>
+                        </ul>
+                    </p>
+                    <h5>Precio: <span class="precio">$6800</span></h5>
+                    <!--<a href="#" class="btn btn-dark boton-tarjeta" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Ver Detalle</a>-->
+
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button  class="btn btn-car btn-outline-secondary button">Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ005</h5>
+                <img src="{% static 'img/product/laptop2.jpg'%}" style="height: 20rem;" class=" img img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LAPTOP 2</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Alto: 10 cm</li>
+                            <li style="text-align: left;">Diámetro exterior: 10 cm</li>
+                            <li style="text-align: left;">Diámetro máximo macetero: 9 cm</li>
+                            <li style="text-align: left;">Diámetro interior: 9 cm</li>
+                        </ul>
+                    </p>
+                    <h5>Precio: <span class="precio">$3490</span></h5>
+                    <!--<a href="#" class="btn btn-primary boton-tarjeta" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Ver Detalle</a>-->
+
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" style:  >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button  class="btn btn-car btn-outline-secondary button">Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ006</h5>
+                <img src="{% static 'img/product/laptop3.jpg' %}" style="height: 20rem;" class="img img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">LAPTOP 3</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Alto: 11 cm</li>
+                            <li style="text-align: left;">Diámetro exterior: 12 cm</li>
+                            <li style="text-align: left;">Diámetro máximo macetero: 9 cm</li>
+                            <li style="text-align: left;">Diámetro interior: 11 cm</li>
+                        </ul>
+                    </p>
+                    <h5>Precio: <span class="precio">$2490</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button  class="btn btn-car btn-outline-secondary button" >Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center p-4" style="background-color: #eee">
+        <h1 class="display-6">Consolas</h1>
+        <a class="text-reset fw-bold" href=""></a>
+    </div>
+
+    <!--TIENDA 3-->i
+    <div class="row">
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ007</h5>
+                <img src="{% static 'img/product/play5.jpg'%}" style="height: 20rem;" class="img img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Consola 1</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Alto: 12 cm</li>
+                            <li style="text-align: left;">Diámetro exterior: 11 cm</li>
+                            <li style="text-align: left;">Diámetro máximo macetero: 9 cm</li>
+                            <li style="text-align: left;">Diámetro interior: 10 cm</li>
+                        </ul>
+                    </p>
+                    <h5>Precio: <span class="precio">$36000</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button  class="btn btn-car btn-outline-secondary button" >Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ008</h5>
+                <img src="{% static 'img/product/xbox.jpg'%}" style="height: 20rem;" class=" img img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Consola 2</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Alto: 10 cm</li>
+                            <li style="text-align: left;">Diámetro exterior: 10 cm</li>
+                            <li style="text-align: left;">Diámetro máximo macetero: 9 cm</li>
+                            <li style="text-align: left;">Diámetro interior: 9 cm</li>
+                        </ul>
+                    </p>
+                    <h5 >Precio: <span class="precio">$49000</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button  class="btn btn-car btn-outline-secondary button" >Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="col" align="center">
+            <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="width: 30rem;">
+                <h5 class="card-codigo">CODIGO: CAJ009</h5>
+                <img src="{% static 'img/product/nintendo.jpg'%}" style="height: 20rem;" class="img img-fluid card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Consola 3</h5>
+                    <p class="card-text">
+                        <ul>
+                            <li style="text-align: left;">Alto: 10 cm</li>
+                            <li style="text-align: left;">Diámetro exterior: 10 cm</li>
+                            <li style="text-align: left;">Diámetro máximo macetero: 9 cm</li>
+                            <li style="text-align: left;">Diámetro interior: 9 cm</li></p>
+                        </ul>
+                    <h5>Precio: <span class="precio">$55490</span></h5>
+                    <!--BOTON AÑADIR AL CARRITO-->
+                    <div class="btn-group" role="group" >
+                        <td><input class="inp cantidad" type="number" min="1" value="1"></td>
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-car btn-outline-secondary button" >Añadir al carro</button>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>menu</h4>
+                    <ul>
+                        <li><a href="">inicio</a></li>
+                        <li><a href="">tienda</a></li>
+                        <li><a href="">seguimiento</a></li>
+                        <li><a href="#">clientes</a></li>
+                        <li><a href="#">contacto</a></li>
+                    </ul>
+                
+            </div>
+            
+            <div class="footer-col">
+                <h4>informacion</h4>
+                    <ul>
+                        <li><a href="">seguimineto</a></li>
+                        <li><a href="">cambios y devoluciones</a></li>
+                        <li><a href="">terminos y condiciones de uso</a></li>
+                        <li><a href="">cuidado de tus plantas</a></li>
+                        
+                    </ul>
+                
+            </div>
+            <div class="footer-col">
+                <h4>siguenos</h4>
+                    <div class="social-links">
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                        
+                    
+                
+            </div>
+        </div>
+        
+    </div>
+</footer>
+    <!-- Copyright -->
+<div class="text-center p-4">
+        © 2023 Copyright: Gonzalo Leiva, Cristian Alvarez
+        <a class="text-reset fw-bold" href=""></a>
+</div>
+
+
+<div class="modal" tabindex="-1" id="exampleModal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Carrito de compras</h5>
+            </div>
+        <div class="modal-body">
+            <p>
+                <section>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">
+                            
+                        </tbody>
+                    </table>
+                    <div class="row mx-4">
+                        <div>
+                            <h3 class="item-car-total">Total: 0</h3>
+                        </div>
+                        <div class="">
+                            
+                        </div>
+                    </div>
+                </section>
+            </p>
+        </div>
+        <div class="modal-footer col d-flex justify-content-end">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cancelar <i class="bi bi-x-lg"></i></button>
+            <a href="{% url 'carrito' %}">
+                <button type="button" class="btn btn-primary">Comprar <i class="bi bi-bag-heart-fill"></i></button>
+            </a>
+        </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
